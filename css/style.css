@@ -92,7 +92,7 @@ ul {
     background-image: linear-gradient(rgb(255, 255, 255, 0.5), rgb(255, 255, 255, 0.5)), url(../images/4.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: relative;
+/*    background-position: relative;*/
     min-height: 800px;
 }
 
@@ -175,14 +175,210 @@ ul {
 */
 
 #description-1,
-#programs {
+#program-list {
 /*    border: solid;*/
     padding: 0px 20px;
 }
 
-#programs ul {
+/*
+#program ul {
     padding-left: 20px;
 }
+*/
+
+.information .program {
+    text-decoration: none;
+}
+
+/*
+.program-buttons {
+    background-color: lightblue;
+    border: solid 0;
+    border-radius: 20px;
+    color: #262626;
+    display: inline-block;
+    font-family: Georgia, serif;
+    font-size: 1.2em;
+    height: 200px;
+    width: 350px;
+    //overflow: hidden;
+    padding: 0;
+    margin: 0;
+    //margin: 10px 20px;
+    //padding: 10px;
+    outline: none;
+    vertical-align: top;
+}
+*/
+
+.program-buttons {
+    border: solid;
+    border-radius: 20px;
+    color: white;
+    display: inline-block;
+    font-family: Georgia, serif;
+    font-size: 1.2em;
+    height: 200px;
+    width: 350px;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+/*
+    margin: 10px 20px;
+    padding: 10px;
+*/
+    outline: none;
+    vertical-align: top;
+}
+
+#program-1 .inner-div {
+    height: 100%;
+    width: 100%;
+    border: solid;
+    border-radius: inherit;
+    background-image: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)), url(../images/tutor-2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+#program-1:hover {
+/*
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+*/
+    transform: scale(1.1);
+}
+
+#program-2 {
+    background-image: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3)), url(../images/tutor-4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+#program-2:hover {
+    background-image: none;
+    background-color: slategray;
+}
+
+#program-3 {
+    background-image: linear-gradient(rgb(0, 0, 0, 0.2), rgb(0, 0, 0, 0.2)), url(../images/international-students.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+#program-3:hover {
+    background-image: none;
+    background-color: slategray;
+}
+
+
+#program-4 {
+    background-image: linear-gradient(rgb(0, 0, 0, 0.2), rgb(0, 0, 0, 0.2)), url(../images/garden.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+#program-4:hover {
+    background-image: none;
+    background-color: slategray;
+}
+
+#program-5 {
+    background-image: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3)), url(../images/tutor-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+#program-5:hover {
+    background-image: none;
+    background-color: slategray;
+}
+
+
+#program-6 {
+    background-image: linear-gradient(rgb(0, 0, 0, 0.2), rgb(0, 0, 0, 0.2)), url(../images/7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+#program-6:hover {
+    background-image: none;
+    background-color: slategray;
+}
+
+
+#program-7 {
+    background-image: linear-gradient(rgb(0, 0, 0, 0.2), rgb(0, 0, 0, 0.2)), url(../images/vita.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+#program-7:hover {
+    background-image: none;
+    background-color: slategray;
+}
+*/
+
+.program-buttons:hover {
+    background-color: slategray;
+    color: white;
+    box-shadow: 0 20px 30px 0 rgba(0,0,0,0.40), 0 40px 80px 0 rgba(0,0,0,0.20);
+}
+
+/*
+.row-1, .row-2, .row-3 {
+    border: none;
+    display: block;
+}
+*/
+
+.row-1 .program-buttons {
+    margin: 25px 30px;
+    padding: 10px;
+}
+
+.row-2 .program-buttons {
+    margin: 25px 50px;
+    padding: 10px;
+}
+
+.row-3 .program-buttons {
+    margin: 25px 50px;
+    padding: 10px;
+}
+
+/*
+#program-1 {
+    background-image: linear-gradient(rgb(255, 255, 255, 0.6), rgb(255, 255, 255, 0.6)), url(../images/aclamo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#program-4 {
+    background-image: linear-gradient(rgb(255, 255, 255, 0.5), rgb(255, 255, 255, 0.5)), url(../images/garden.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+*/
+
+/*
+#program-1,
+#program-2,
+#program-3 {
+    border: solid;
+    display: inline-block;
+    margin: 0 auto;
+}
+*/
 
 /* Section: Blogs */
 
