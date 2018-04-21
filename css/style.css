@@ -1,0 +1,245 @@
+/* Global */
+
+html {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    /* background: snow; */
+    color: #262626;
+    font-family: Georgia, serif;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+h1 {
+    font-size: 3.5em;
+    text-transform: uppercase;
+}
+
+br {
+    display: block;
+    margin: 20px 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+/* Section: Header & Title */
+
+.logo {
+    display: inline-block;
+    margin: 40px 30px 0;
+    min-width: 25%;
+    word-wrap: break-word;
+}
+
+.logo img {
+    display: block;
+    height: 50px;
+    width: 250px;
+    margin: 0 35px;
+}
+
+.logo p {
+    color: black;
+}
+
+.logo p,
+.title p {
+    font-size: 1.5em;
+    margin-top: 0.8em;
+}
+
+.navigation-bar {
+    background-color: #262626;
+    display: block;
+    float: right;
+    margin-top: 40px;
+    width: 60%;
+}
+
+.navigation-bar li {
+    display: inline;
+    float: left;
+}
+
+.navigation-bar li a {
+    color: white;
+    display: block;
+    padding: 20px 30px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navigation-bar li a:hover {
+    background-color: black;
+}
+
+.title {
+    background-image: linear-gradient(rgb(255, 255, 255, 0.5), rgb(255, 255, 255, 0.5)), url(../images/4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: relative;
+    min-height: 800px;
+}
+
+.title .text {
+    text-align: right;
+    padding-top: 60px;
+    padding-right: 30px;
+}
+
+.title h1 {
+    margin-bottom: 0;
+    padding: 0;
+}
+
+/* Section: Question */
+
+.question h2 {
+    font-size: 2.5em;
+}
+
+.question .choice {
+    text-decoration: none;
+}
+
+.choice-buttons {
+    background-color: lightblue;
+    border: solid 0;
+    border-radius: 15px;
+    color: #262626;
+    display: inline-block;
+    font-family: Georgia, serif;
+    font-size: 1.2em;
+    min-height: 300px;
+    max-width: 30%;
+    margin: 10px 20px;
+    padding: 10px;
+    outline: none;
+    vertical-align: top;
+}
+
+/*.choice-buttons.intro {
+    background: url(../images/4-2.png);
+    background-repeat: no-repeat;
+    background-size: auto 300px;
+}
+
+.choice-buttons.quiz {
+    background: url(../images/1-1.png);
+    background-repeat: no-repeat;
+    background-size: auto 300px;
+}
+
+.choice-buttons.forms {
+    background: url(../images/laptop-3.png);
+    background-repeat: no-repeat;
+    background-size: auto 300px;
+}*/
+
+.choice-buttons:hover {
+    background-color: slategray;
+    color: white;
+    box-shadow: 0 20px 30px 0 rgba(0,0,0,0.40), 0 40px 80px 0 rgba(0,0,0,0.20);
+}
+
+/* Section: Information & Programs */
+
+/* How to set up col-wide and col-narrow? Working with columns? */
+/*
+#description-1,
+#programs {
+    border: solid;
+    display: inline-block;
+    float: left;
+    height: auto;
+    min-height: 250px;
+    width: 50%;
+    margin-bottom: 20px;
+    padding-right: 10px;
+}
+*/
+
+#description-1,
+#programs {
+/*    border: solid;*/
+    padding: 0px 20px;
+}
+
+#programs ul {
+    padding-left: 20px;
+}
+
+/* Section: Blogs */
+
+/* Dropdown Button */
+.dropdown-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #404040;
+    font-family: Georgia, serif;
+    font-size: 1em;
+    padding: 10px 0;
+    outline: none;
+}
+
+.dropdown-button img {
+    padding: 0;
+    margin: 0;
+}
+
+/* Dropdown button on hover & focus */
+/*.dropdown-button:hover, .dropdown-button:focus {
+    box-shadow: 0 20px 30px 0 rgba(0,0,0,0.40), 0 40px 80px 0 rgba(0,0,0,0.20);
+}*/
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #F1F1F1
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+    display:block;
+}
+
+/* Section: Footer */
+
+.footer p {
+    text-align: center;
+}
