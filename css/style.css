@@ -212,43 +212,75 @@ ul {
 */
 
 .program-buttons {
-    border: solid;
+    background-color: lightblue;
+    border: 0 solid;
     border-radius: 20px;
     color: white;
+    cursor: pointer;
+/*    display: inline-block;*/
     display: inline-block;
     font-family: Georgia, serif;
     font-size: 1.2em;
     height: 200px;
     width: 350px;
     overflow: hidden;
+    position: relative;
+/*    position: relative;*/
+/*
     padding: 0;
     margin: 0;
-/*
-    margin: 10px 20px;
-    padding: 10px;
 */
     outline: none;
     vertical-align: top;
 }
 
-#program-1 .inner-div {
+.bg-image {
+    border: solid;
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
     height: 100%;
     width: 100%;
-    border: solid;
-    border-radius: inherit;
-    background-image: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)), url(../images/tutor-2.jpeg);
+    
     background-repeat: no-repeat;
     background-size: cover;
-    color: white;
-    margin: 0;
-    padding: 0;
+/*    border: solid black;*/
+/*    border-radius: 20px;*/
+/*    color: white;*/
+/*    display: inline-block;*/
+/*    float: left;*/
+    
+/*    margin: 0;*/
+/*    top: 0;*/
+/*    position: inherit;*/
+    transition: all 0.5s;
 }
 
-#program-1:hover {
-/*
+.program-1 {
+    background-image: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)), url(../images/tutor-2.jpeg); 
+}
+
+.program-buttons h3 {
+    border: solid black;
+/*    display: table-cell;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* increase width of block element to fit the parent's width, then we can use text align center*/
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+/*    text-align: center;*/
+    margin: 0; /*h3 has default margins, preventing it from fitting the parent div .program-buttons in the first place*/
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.program-buttons:hover .bg-image {
     -moz-transform: scale(1.1);
     -webkit-transform: scale(1.1);
-*/
     transform: scale(1.1);
 }
 
