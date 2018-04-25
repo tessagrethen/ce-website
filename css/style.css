@@ -10,16 +10,32 @@ html {
 }
 
 body {
-    /* background: snow; */
+/*     background: snow; */
     color: #262626;
     font-family: Georgia, serif;
+/*    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+/*    font-family: "Open Sans", sans-serif;*/
     font-size: 1.2em;
+    line-height: 1.5;
     margin: 0;
 }
 
 h1 {
+/*    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+    font-family: "Open Sans", sans-serif;
+    font-weight: 900;
     font-size: 3.5em;
     text-transform: uppercase;
+    margin-top: 10px;
+}
+
+h2, h3 {
+/*    font-family: 'Roboto', sans-serif;*/
+/*    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-bottom: 20px;
 }
 
 br {
@@ -129,11 +145,13 @@ ul {
     display: inline-block;
     font-family: Georgia, serif;
     font-size: 1.2em;
+    line-height: 1.5;
     min-height: 300px;
     max-width: 30%;
     margin: 10px 20px;
     padding: 10px;
     outline: none;
+    transition: all 0.2s ease 0s;
     vertical-align: top;
 }
 
@@ -178,35 +196,59 @@ ul {
 }
 */
 
+.information h2 {
+    font-size: 2em;
+}
+
+.information p {
+    font-size: 1.2em;
+}
+
 #description-1 {
 /*    border: solid;*/
     display: inline-block;
+/*    position: relative;*/
     float: left;
-    width: 50%;
-    min-height: 500px;
+    width: 60%;
+    height: 550px;
 }
 
 #newsletter {
-/*    border: solid;*/
     display: inline-block;
 /*    float: left;*/
-    width: 50%;
-    min-height: 500px;
+    width: 40%;
+    height: 550px;
+/*    padding-bottom: 50px;*/
+}
+
+#newsletter a {
+    text-decoration: none;
+}
+
+#newsletter img {
+    border: 0 solid;
+    min-width: 70%;
+    min-height: 80%;
+    margin: 0;
+}
+
+#newsletter a:hover img {
+    box-shadow: 0 20px 30px 0 rgba(0,0,0,0.40), 0 40px 80px 0 rgba(0,0,0,0.20);
 }
 
 /* LEFT OFF HERE! */
 
 #other-opps {
     display: inline-block;
-    min-height: 300px;
+    height: auto;
 }
-
 
 #description-1,
 #newsletter,
 #program-list,
 #other-opps {
-    padding: 0px 30px;
+    padding: 0px 50px 30px;
+    text-align: center;
 }
 
 #program-list .program {
@@ -428,7 +470,7 @@ ul {
     cursor: pointer;
     color: #262626;
     font-family: Georgia, serif;
-    font-size: 1em;
+    font-size: 1.2em;
     padding: 10px 0;
     outline: none;
 }
