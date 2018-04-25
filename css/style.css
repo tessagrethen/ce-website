@@ -16,7 +16,7 @@ body {
 /*    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
 /*    font-family: "Open Sans", sans-serif;*/
     font-size: 1.2em;
-    line-height: 1.5;
+/*    line-height: 1.5;*/
     margin: 0;
 }
 
@@ -36,6 +36,10 @@ h2, h3 {
     font-size: 1.2em;
     font-weight: 700;
     margin-bottom: 20px;
+}
+
+h2 ~ p {
+    line-height: 2.0;
 }
 
 br {
@@ -88,7 +92,7 @@ ul {
     display: block;
     float: right;
     margin-top: 40px;
-    width: 60%;
+    width: 50%;
 }
 
 .navigation-bar li {
@@ -155,6 +159,10 @@ ul {
     vertical-align: top;
 }
 
+.choice-buttons h3 {
+    font-size: 1.3em;
+}
+
 /*.choice-buttons.intro {
     background: url(../images/4-2.png);
     background-repeat: no-repeat;
@@ -210,19 +218,42 @@ ul {
 /*    position: relative;*/
     float: left;
     width: 60%;
-    height: 550px;
+    height: 650px;
 }
 
 #newsletter {
     display: inline-block;
 /*    float: left;*/
     width: 40%;
-    height: 550px;
+    height: 650px;
 /*    padding-bottom: 50px;*/
 }
 
-#newsletter a {
+#description-2 {
+    display: inline-block;
+/*    position: relative;*/
+    float: left;
+    width: 60%;
+    height: 500px;
+}
+
+#directories {
+    display: inline-block;
+    width: 40%;
+    height: 500px;
+}
+
+#newsletter a,
+#directories a {
+    display: block;
     text-decoration: none;
+    outline: none;
+}
+
+#directories a {
+    font-size: 1.2em;
+    color: #262626;
+    padding: 10px 50px;
 }
 
 #newsletter img {
@@ -236,17 +267,62 @@ ul {
     box-shadow: 0 20px 30px 0 rgba(0,0,0,0.40), 0 40px 80px 0 rgba(0,0,0,0.20);
 }
 
-/* LEFT OFF HERE! */
+#directories ul {
+/*    border: solid;*/
+/*    display: inline-block;*/
+    margin: 0;
+    padding: 0;
+}
 
+#directories a:active {
+    color: #262626;
+}
+
+#directories a:hover {
+    background-color: #F1F1F1;
+    color: black;
+}
+
+#directories a:visited {
+    color: #262626;
+}
+
+/*
 #other-opps {
     display: inline-block;
+    width: 60%;
+    height: auto;
+}
+*/
+
+/*
+#description-2 {
+    display: inline-block;
+    width: 60%;
     height: auto;
 }
 
+#directories {
+    display: inline-block;
+    width: 40%;
+}
+*/
+
+/*
 #description-1,
 #newsletter,
 #program-list,
 #other-opps {
+    padding: 0px 50px 30px;
+    text-align: center;
+}
+*/
+
+#description-1,
+#newsletter,
+#program-list,
+#description-2,
+#directories {
     padding: 0px 50px 30px;
     text-align: center;
 }
@@ -520,4 +596,16 @@ ul {
 
 .footer p {
     text-align: center;
+}
+
+.footer a:link {
+    color: #262626;
+}
+
+.footer a:hover {
+    color: dimgrey;
+}
+
+.footer a:visited {
+    color: #262626;
 }
