@@ -10,18 +10,21 @@ html {
 }
 
 body {
-/*     background: snow; */
     color: #262626;
     font-family: Georgia, serif;
-/*    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
-/*    font-family: "Open Sans", sans-serif;*/
     font-size: 1.2em;
-/*    line-height: 1.5;*/
-    margin: 0;
+    margin: 0 auto;
+    width: 100%;
 }
 
+/*
+#page-wrap {
+    width: 80%;
+    margin: 0 auto;
+}
+*/
+
 h1 {
-/*    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
     font-family: "Open Sans", sans-serif;
     font-weight: 900;
     font-size: 3.5em;
@@ -30,8 +33,6 @@ h1 {
 }
 
 h2, h3 {
-/*    font-family: 'Roboto', sans-serif;*/
-/*    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
     font-family: "Open Sans", sans-serif;
     font-size: 1.2em;
     font-weight: 700;
@@ -65,8 +66,9 @@ ul {
 
 .logo {
     display: inline-block;
-    margin: 40px 30px 0;
+    margin: 1em 4em 0;
     min-width: 25%;
+    padding: 1em 1em 0;
     word-wrap: break-word;
 }
 
@@ -74,7 +76,7 @@ ul {
     display: block;
     height: 50px;
     width: 250px;
-    margin: 0 35px;
+    margin: 0 2em;
 }
 
 .logo p {
@@ -87,11 +89,31 @@ ul {
     margin-top: 0.8em;
 }
 
+.switch {
+    display: block;
+    text-align: right;
+    padding: 0 2em 1em;
+}
+
+.switch a {
+    color: #337CAC;
+    text-decoration: none;
+}
+
+.swtich a:visited {
+    color: #337CAC;
+}
+
+.switch a:hover {
+    color: #262626;
+}
+
 .navigation-bar {
+    border: solid white;
     background-color: #262626;
     display: block;
     float: right;
-    margin-top: 40px;
+    margin-top: 2em;
     width: 50%;
 }
 
@@ -113,7 +135,7 @@ ul {
 }
 
 .title {
-    background-image: linear-gradient(rgb(255, 255, 255, 0.5), rgb(255, 255, 255, 0.5)), url(../images/4.jpg);
+    background-image: linear-gradient(rgb(255, 255, 255, 0.4), rgb(255, 255, 255, 0.4)), url(../images/4.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 /*    background-position: relative;*/
@@ -122,8 +144,8 @@ ul {
 
 .title .text {
     text-align: right;
-    padding-top: 60px;
-    padding-right: 30px;
+    padding-top: 2em;
+    padding-right: 3em;
 }
 
 .title h1 {
@@ -133,27 +155,35 @@ ul {
 
 /* Section: Question */
 
+.question {
+    text-align: center;
+}
+
 .question h2 {
     font-size: 2.5em;
 }
 
-.question .choice {
+.question a {
     text-decoration: none;
 }
 
 .choice-buttons {
     background-color: lightblue;
     border: solid 0;
-    border-radius: 15px;
+    border-radius: 25px;
     color: #262626;
     display: inline-block;
     font-family: Georgia, serif;
     font-size: 1.2em;
     line-height: 1.5;
+/*
     min-height: 300px;
     max-width: 30%;
-    margin: 10px 20px;
-    padding: 10px;
+*/
+    height: 300px;
+    width: 450px;
+    margin: 1em;
+    padding: 1empx;
     outline: none;
     transition: all 0.2s ease 0s;
     vertical-align: top;
@@ -163,46 +193,14 @@ ul {
     font-size: 1.3em;
 }
 
-/*.choice-buttons.intro {
-    background: url(../images/4-2.png);
-    background-repeat: no-repeat;
-    background-size: auto 300px;
-}
-
-.choice-buttons.quiz {
-    background: url(../images/1-1.png);
-    background-repeat: no-repeat;
-    background-size: auto 300px;
-}
-
-.choice-buttons.forms {
-    background: url(../images/laptop-3.png);
-    background-repeat: no-repeat;
-    background-size: auto 300px;
-}*/
-
 .choice-buttons:hover {
     background-color: slategray;
     color: white;
-    box-shadow: 0 20px 30px 0 rgba(0,0,0,0.40), 0 40px 80px 0 rgba(0,0,0,0.20);
+    cursor: pointer;
+    box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.40), 0 40px 80px 0 rgba(0, 0, 0, 0.20);
 }
 
 /* Section: Information & Programs */
-
-/* How to set up col-wide and col-narrow? Working with columns? */
-/*
-#description-1,
-#programs {
-    border: solid;
-    display: inline-block;
-    float: left;
-    height: auto;
-    min-height: 250px;
-    width: 50%;
-    margin-bottom: 20px;
-    padding-right: 10px;
-}
-*/
 
 .information h2 {
     font-size: 2em;
@@ -212,24 +210,75 @@ ul {
     font-size: 1.2em;
 }
 
-#description-1 {
+#about,
+#newsletter,
+#program-list,
+#other-opps,
+#directories {
+/*    padding: 0px 50px 30px;*/
+    padding: 0 5em 1em;
+}
+
+#about {
 /*    border: solid;*/
     display: inline-block;
-/*    position: relative;*/
+    text-align: left;
     float: left;
     width: 60%;
-    height: 650px;
+    height: 550px;
+}
+
+#about h2 {
+    text-align: left;
+}
+
+#about p {
+/*    border: solid;*/
+    text-align: left;
 }
 
 #newsletter {
+/*    border: solid;*/
     display: inline-block;
 /*    float: left;*/
     width: 40%;
-    height: 650px;
+    height: 550px;
 /*    padding-bottom: 50px;*/
 }
 
-#description-2 {
+#newsletter h2 {
+    text-align: left;
+}
+
+#newsletter a {
+/*    border: solid black;*/
+    display: inline-block;
+    text-align: left;
+    text-decoration: none;
+    padding: 10px;
+}
+
+#newsletter img {
+    border: 0 solid;
+/*
+    height: 50%;
+    width: 60%;
+*/
+    height: 400px;
+    object-fit: contain;
+/*    min-height: 80%;*/
+}
+
+#newsletter a:hover img {
+    box-shadow: 0 20px 30px 0 rgba(0,0,0,0.40), 0 40px 80px 0 rgba(0,0,0,0.20);
+}
+
+#program-list {
+    text-align: center;
+}
+
+#other-opps {
+/*    border: solid;*/
     display: inline-block;
 /*    position: relative;*/
     float: left;
@@ -238,34 +287,12 @@ ul {
 }
 
 #directories {
+/*    border: solid;*/
     display: inline-block;
     width: 40%;
     height: 500px;
 }
 
-#newsletter a,
-#directories a {
-    display: block;
-    text-decoration: none;
-    outline: none;
-}
-
-#directories a {
-    font-size: 1.2em;
-    color: #262626;
-    padding: 10px 50px;
-}
-
-#newsletter img {
-    border: 0 solid;
-    min-width: 70%;
-    min-height: 80%;
-    margin: 0;
-}
-
-#newsletter a:hover img {
-    box-shadow: 0 20px 30px 0 rgba(0,0,0,0.40), 0 40px 80px 0 rgba(0,0,0,0.20);
-}
 
 #directories ul {
 /*    border: solid;*/
@@ -274,83 +301,29 @@ ul {
     padding: 0;
 }
 
-#directories a:active {
-    color: #262626;
+#directories a {
+    display: block;
+    color: #337CAC;
+    font-size: 1.2em;
+    text-align: left;
+    text-decoration: none;
+    outline: none;
+    padding: 10px;
+}
+
+
+#directories a:visited {
+    color: #337CAC;
 }
 
 #directories a:hover {
     background-color: #F1F1F1;
-    color: black;
-}
-
-#directories a:visited {
     color: #262626;
-}
-
-/*
-#other-opps {
-    display: inline-block;
-    width: 60%;
-    height: auto;
-}
-*/
-
-/*
-#description-2 {
-    display: inline-block;
-    width: 60%;
-    height: auto;
-}
-
-#directories {
-    display: inline-block;
-    width: 40%;
-}
-*/
-
-/*
-#description-1,
-#newsletter,
-#program-list,
-#other-opps {
-    padding: 0px 50px 30px;
-    text-align: center;
-}
-*/
-
-#description-1,
-#newsletter,
-#program-list,
-#description-2,
-#directories {
-    padding: 0px 50px 30px;
-    text-align: center;
 }
 
 #program-list .program {
     text-decoration: none;
 }
-
-/*
-.program-buttons {
-    background-color: lightblue;
-    border: solid 0;
-    border-radius: 20px;
-    color: #262626;
-    display: inline-block;
-    font-family: Georgia, serif;
-    font-size: 1.2em;
-    height: 200px;
-    width: 350px;
-    overflow: hidden;
-    padding: 0;
-    margin: 0;
-    //margin: 10px 20px;
-    //padding: 10px;
-    outline: none;
-    vertical-align: top;
-}
-*/
 
 .program-buttons {
     border: 0 solid;
@@ -404,8 +377,6 @@ ul {
 }
 
 .program-buttons h3 {
-/*    display: none; */
-/*    visibility: hidden;*/
     position: absolute;
     top: 0;
     left: 0;
@@ -413,6 +384,7 @@ ul {
     height: 100%;
     width: 100%;
     margin: 0;
+    padding: 0.8em;
     /* h3 has default margins, preventing it from fitting the parent div .program-buttons in the first place */
     /* center h3 element in the middle of parent div */
     display:flex;
@@ -420,30 +392,11 @@ ul {
     justify-content: center;
 }
 
-/*
-.prog-desc h3 {
-    border: solid;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
-*/
-
 .program-buttons:hover .bg-image {
     -moz-transform: scale(1.1);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
-
-/*
-.program-buttons:hover .prog-name {
-    visibility: hidden;
-}
-.program-buttons:hover p {
-    visibility: visible;
-}
-*/
 
 .row-1 .program-buttons {
     margin: 25px 30px;
@@ -460,138 +413,6 @@ ul {
     padding: 10px;
 }
 
-/*
-#program-2 {
-    background-image: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3)), url(../images/tutor-4.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-}
-
-#program-2:hover {
-    background-image: none;
-    background-color: slategray;
-}
-
-#program-3 {
-    background-image: linear-gradient(rgb(0, 0, 0, 0.2), rgb(0, 0, 0, 0.2)), url(../images/international-students.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-}
-
-#program-3:hover {
-    background-image: none;
-    background-color: slategray;
-}
-
-
-#program-4 {
-    background-image: linear-gradient(rgb(0, 0, 0, 0.2), rgb(0, 0, 0, 0.2)), url(../images/garden.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-}
-
-#program-4:hover {
-    background-image: none;
-    background-color: slategray;
-}
-
-#program-5 {
-    background-image: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3)), url(../images/tutor-1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-}
-
-#program-5:hover {
-    background-image: none;
-    background-color: slategray;
-}
-
-
-#program-6 {
-    background-image: linear-gradient(rgb(0, 0, 0, 0.2), rgb(0, 0, 0, 0.2)), url(../images/7.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-}
-
-#program-6:hover {
-    background-image: none;
-    background-color: slategray;
-}
-
-
-#program-7 {
-    background-image: linear-gradient(rgb(0, 0, 0, 0.2), rgb(0, 0, 0, 0.2)), url(../images/vita.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-}
-
-#program-7:hover {
-    background-image: none;
-    background-color: slategray;
-}
-*/
-
-/* Section: Blogs */
-
-/* Dropdown Button */
-.dropdown-button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    color: #262626;
-    font-family: Georgia, serif;
-    font-size: 1.2em;
-    padding: 10px 0;
-    outline: none;
-}
-
-.dropdown-button img {
-    padding: 0;
-    margin: 0;
-}
-
-/* Dropdown button on hover & focus */
-/*.dropdown-button:hover, .dropdown-button:focus {
-    box-shadow: 0 20px 30px 0 rgba(0,0,0,0.40), 0 40px 80px 0 rgba(0,0,0,0.20);
-}*/
-
-/* The container <div> - needed to position the dropdown content */
-#dropdown {
-/*    border: solid;*/
-    position: relative;
-    display: inline-block;
-}
-
-/* Dropdown content (hidden by default) */
-.dropdown-content {
-    display: none;
-    z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-    color: #262626;
-    padding: 12px 50px;
-    text-decoration: none;
-    display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-    background-color: #F1F1F1;
-}
-
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {
-    display:block;
-}
-
 /* Section: Footer */
 
 .footer p {
@@ -599,13 +420,173 @@ ul {
 }
 
 .footer a:link {
-    color: #262626;
-}
-
-.footer a:hover {
-    color: dimgrey;
+    color: #337CAC;
 }
 
 .footer a:visited {
+    color: #337CAC;
+}
+
+.footer a:hover {
     color: #262626;
+}
+
+/* Section: Slideshow */
+
+.slideshow iframe {
+    border: 0 solid;
+    outline: none;
+    display: block;
+    margin: 0 auto;
+    text-decoration: none;
+}
+
+/* Section: Clearances */
+
+.clearances {
+    padding: 0 30px;
+}
+
+.slideshow iframe:hover {
+    border: 0 solid;
+}
+
+/* Section: Quiz */
+.grid {
+    border: 2px solid silver;
+    border-radius: 50px;
+    width: 70%;
+    min-height: 500px;
+    margin: 20px auto 50px;
+    background-color: white;
+    padding: 10px 50px 50px 50px;
+    box-shadow: 0 20px 30px 0 rgba(0, 0 , 0 , 0.40);
+    background-image: linear-gradient(rgb(255, 255, 255, 0.6), rgb(255, 255, 255, 0.6)), url(../images/laptop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.grid h2 {
+    background-color: rgba(38, 38, 38, 0.9);
+/*    background-color: slategray;*/
+    border-radius: 30px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 3em;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    padding: 10px 0px;
+}
+
+.grid #question {
+/*    border: solid;*/
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: 1.5em;
+    color: #262626;
+}
+
+.prog-link {
+    display: block;
+    background-color: rgb(51, 124, 172, 0.9);
+    color: white;
+    font-size: 1.2em;
+    text-align: left;
+    text-decoration: none;
+    outline: none;
+    padding: 10px 30px;
+    transition: all 0.2s ease 0s;
+}
+
+
+.prog-link:visited {
+    color: white;
+}
+
+.prog-link:hover {
+    background-color: rgba(38, 38, 38, 0.9);
+}
+
+#quiz h3 {
+    font-size: 1.5em;
+}
+
+#answers button {
+    border: 0 solid;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin-top: 30px;
+    padding: 0px 60px;
+    outline: none;
+}
+
+#btn0, #btn1, #btn2 {
+/*    display: block;*/
+    border: 0 solid;
+    background-color: rgba(38, 38, 38, 0.8);
+    border: 0 solid;
+    border-radius: 10px;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2em;
+    width: 100%;
+    height: 3em;
+    margin: 0 auto;
+    padding: 10px 10px;
+    transition: all 0.2s ease 0s;
+}
+
+#btn0:hover, #btn1:hover, #btn2:hover, #btn3:hover {
+    cursor: pointer;
+    background-color: #262626;
+/*    color: white;*/
+}
+
+#btn0:focus, #btn1:focus, #btn2:focus, #btn3:focus {
+    outline: 0;
+}
+
+#back-btn,
+#retake-btn {
+    display: inline-block;
+    background-color: rgba(38, 38, 38, 0.8);
+    border: 0 solid;
+    border-radius: 10px;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+/*    font-family: Georgia, serif;*/
+    font-size: 1em;
+    padding: 20px;
+    margin: 60px 0 0;
+    outline: none;
+}
+
+#retake-btn {
+    float: right;
+}
+
+#back-btn:hover,
+#retake-btn:hover {
+    cursor: pointer;
+    background-color: #262626;
+}
+
+#back-btn:focus,
+#retake-btn:focus {
+    outline: 0;
+}
+
+#back-btn a,
+#retake-btn a {
+    color: white;
+    text-decoration: none;
+}
+
+
+#progress {
+    color: #2b2b2b;
+    font-size: 1em;
 }

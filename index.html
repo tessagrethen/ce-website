@@ -12,11 +12,12 @@
     <!-- fancybox -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css">
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:700|Raleway:700|Roboto:700,900|Gentium+Basic:700|Open+Sans:400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gentium+Basic:700|Open+Sans:400,700,900" rel="stylesheet">
 
 </head>
 
 <body>
+<div id="page-wrap">
 <header>
     <div class="logo">
         <img src="images/logo.png" alt="Bryn Mawr College logo">
@@ -25,11 +26,16 @@
     <div class="navigation-bar">
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="#description-1">About</a></li>
-            <li><a href="#newsletter">Newsletter</a></li>
-            <li><a href="#program-list">Programs</a></li>
-            <li><a href="#directories">Directories</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="index.html/#newsletter">Newsletter</a></li>
+            <li><a href="index.html/#program-list">Programs</a></li>
+            <li><a href="index.html/#directories">Directories</a></li>
         </ul>
+    </div>
+    
+    <div class="switch">
+        Prefer a compact version of this web application?
+        <a href="volunteering.html">Check out our slideshow! <i class="fas fa-external-link-alt"></i></a>
     </div>
 </header>
     
@@ -45,7 +51,7 @@
         
         <h2>What would you like to do today?</h2>
         <p>
-            <a class="choice" href="#description-1">
+            <a href="#about">
                 <button class="choice-buttons" type="button">
                     <i class="far fa-newspaper fa-3x"></i>
                     <h3>Learn about LILAC | CE</h3>
@@ -53,7 +59,7 @@
                 </button>
             </a>
 
-            <a class="choice" href="short-quiz.html">
+            <a href="short-quiz.html">
                 <button class="choice-buttons" type="button">
                     <i class="fas fa-search fa-3x"></i>
                     <h3>Find a Volunteer Program</h3>
@@ -61,7 +67,7 @@
                 </button>
             </a>
 
-            <a class="choice" href="">
+            <a href="clearances.html">
                 <button class="choice-buttons" type="button">
                     <i class="far fa-edit fa-3x"></i>
                     <h3>Submit Clearance Forms</h3>
@@ -73,18 +79,16 @@
     </section>
     <br>
     <section class="information">
-        <div class="dark-bg" id="description-1">
-<!--            <div class="content">-->
+        <div class="dark-bg" id="about">
             <h2>About Us</h2>
             <p>
                 LILAC | Civic Engagement collaborates with community-based organizations to prepare students to become socially responsible leaders and citizens through purposeful action, reflection, and learning. We run a wide variety of programs that provide direct service and opportunities for students to reflect on that service inside and outside of the classroom.
             </p>
-<!--            </div>-->
         </div>
         
         <div class="dark-bg" id="newsletter">
             <h2>CE Stall Newsletter</h2>
-            <a data-fancybox="gallery" href="images/newsletter.jpg"><img src="images/newsletter.jpg" style="max-height:50%;max-width:50%;"></a>
+            <a data-fancybox="gallery" href="images/newsletter.jpg"><img src="images/newsletter.jpg"></a>
         </div>
         
         <div id="program-list">
@@ -96,7 +100,7 @@
                         <div class="bg-image" id="program-1">
                         </div>
                         <div class="prog-desc">
-                            <h3>ACLAMO After-School<br>Program</h3>
+                            <h3>ACLAMO After-School Program</h3>
                             <p>Description</p>
                         </div>
                     </div>
@@ -127,7 +131,7 @@
                         <div class="bg-image" id="program-4">
                             
                         </div>
-                        <h3>Bryn Mawr<br>Community Garden</h3>
+                        <h3>Bryn Mawr Community Garden</h3>
                     </div>
                 </a>
                 
@@ -136,7 +140,7 @@
                         <div class="bg-image" id="program-5">
                             
                         </div>
-                        <h3>Parkway West<br>SAT Prep Program</h3>
+                        <h3>Parkway West SAT Prep Program</h3>
                     </div>
                 </a>
             </div>
@@ -148,7 +152,7 @@
                         <div class="bg-image" id="program-6">
                             
                         </div>
-                        <h3>Saturday of Services</h3>
+                        <h3>Saturdays of Service</h3>
                     </div>
                 </a>
                 
@@ -164,11 +168,10 @@
         </div>
         
 <!--        <div class="dark-bg" id="other-opps">-->
-        <div class="dark-bg" id="description-2">
+        <div class="dark-bg" id="other-opps">
             <h2>Other Volunteer Opportunities</h2>
             <p>
-                Civic Engagement maintains directories of local opportunities in non-profit organizations for students who wish to volunteer on their own, find summer internships, or find Praxis Independent Study field placements. Students who volunteer independently can receive 50% reimbursement for their travel expenses.
-                Check out our Civic Engagement directories to find out about other volunteer opportunities!
+                Civic Engagement maintains directories of local opportunities in non-profit organizations for students who wish to volunteer on their own, find summer internships, or find Praxis Independent Study field placements. Students who volunteer independently can receive 50% reimbursement for their travel expenses. Check out our Civic Engagement directories to find out about other volunteer opportunities!
                 <i class="fas fa-chevron-circle-right"></i>
             </p>
         </div>
@@ -203,57 +206,17 @@
             </ul>
         </div>
 
-<!--
-            <div id="dropdown">
-                <button onclick="dropdown()" class="dropdown-button">
-                    Check out our Civic Engagement directories to find out about other volunteer opportunities!
-                    <i class="fa fa-angle-down"></i>
-                </button>
-                <div id="menu" class="dropdown-content">
-                    <a href="https://activism.blogs.brynmawr.edu/" class="dropdown-item" target="_blank">Activism and Organizing</a>
-                    <a href="http://arts.blogs.brynmawr.edu/" class="dropdown-item" target="_blank">Arts</a>
-                    <a href="http://arts.blogs.brynmawr.edu/" class="dropdown-item" target="_blank">Economic Justice</a>
-                    <a href="http://education.blogs.brynmawr.edu/" class="dropdown-item" target="_blank">Education</a>
-                    <a href="http://environmental.blogs.brynmawr.edu/" class="dropdown-item" target="_blank">Environment</a>
-                    <a href="http://healthvolunteer.blogs.brynmawr.edu/" class="dropdown-item" target="_blank">Health Care</a>
-                    <a href="http://lgbtqa.blogs.brynmawr.edu/" class="dropdown-item" target="_blank">LGBTQIA+</a>
-                    <a href="http://transnational.blogs.brynmawr.edu/" class="dropdown-item" target="_blank">Transnational</a>
-                </div>
-            </div>
--->
-<!--        </div>-->
     </section>
     <br>
     <section class="footer">
         <p>&copy; <a href="https://www.linkedin.com/in/tessagrethen/">Tessa Pham</a> | CS H215: Human Computer Interaction</p>
     </section>
 </main>
+</div>
 
 <!-- JQuery -->
 <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
-
-<!--
-<script>
-    function dropdown() {
-    document.getElementById("menu").classList.toggle("show");
-    }
-
-// Close the dropdown menu if the user clicks outside of it.
-    window.onclick = function(event) {
-        if (!event.target.matches('.dropdown-button')) {
-            var dropdowns = document.getElementsByClassName("dropdown-content");
-            var i;
-            for (i = 0; i < dropdowns.length; i++) {
-                var openDropdown = dropdowns[i];
-                if (openDropdown.classList.contains('show')) {
-                    openDropdown.classList.remove('show');
-                }
-            }
-        }
-    }
-</script>
--->
 
 </body>
 </html>

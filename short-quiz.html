@@ -4,13 +4,10 @@
     <meta charset="utf-8">
     <meta name="description" content="Resources for volunteers of LILAC | Civic Engagement.">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Volunteer Short Quiz</title>
+    <title>Volunteering Short Quiz</title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <!--Font Awesome-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-    <!-- fancybox -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css">
-
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Gentium+Basic:700|Open+Sans:400,700,900" rel="stylesheet">
 </head>
 
 <body>
@@ -29,9 +26,38 @@
     </div>
 </header>
 
-<iframe style="border:0 solid;width:100%;margin:0 auto;height:600px;" src="https://brynmawr.qualtrics.com/jfe/form/SV_7NBfEXUqMBJLO0B"></iframe>
+<main>
+<!--    <iframe style="border:0 solid;width:100%;margin:0 auto;height:600px;" src="https://brynmawr.qualtrics.com/jfe/form/SV_6W3BiyMwX0Et1OJ"></iframe>-->
+    
+    <div class="grid">
+        <div id="quiz">
+            <h2>Matching Quiz</h2>
+            <hr style="margin-bottom:20px;">
 
-<!-- JQuery -->
-<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+            <p id="question"></p>
+
+            <div id="answers">
+<!--
+                <button id="btn0"><span id="choice0"></span></button>
+                <button id="btn1"><span id="choice1"></span></button>
+                <button id="btn2"><span id="choice2"></span></button>
+                <button id="btn3"><span id="choice3"></span></button>
+-->
+            </div>
+
+            <hr style="color:slategray;margin-top:50px;">
+            <footer>
+                <p id="progress">Question x of y</p>
+            </footer>
+        </div>
+    </div>
+    
+    <section class="footer">
+        <p>&copy; <a href="https://www.linkedin.com/in/tessagrethen/">Tessa Pham</a> | CS H215: Human Computer Interaction</p>
+    </section>
+</main>
+
+<script src="js/quiz.js"></script>
+<script src="js/question.js"></script>
+<script src="js/app.js"></script>
 </body>
