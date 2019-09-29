@@ -17,13 +17,6 @@ body {
     width: 100%;
 }
 
-/*
-#page-wrap {
-    width: 80%;
-    margin: 0 auto;
-}
-*/
-
 h1 {
     font-family: "Open Sans", sans-serif;
     font-weight: 900;
@@ -138,7 +131,7 @@ ul {
     background-image: linear-gradient(rgb(255, 255, 255, 0.4), rgb(255, 255, 255, 0.4)), url(../images/4.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-/*    background-position: relative;*/
+    /* background-position: relative; */
     background-attachment: fixed;
     min-height: 800px;
 }
@@ -177,10 +170,8 @@ ul {
     font-family: Georgia, serif;
     font-size: 1.2em;
     line-height: 1.5;
-/*
-    min-height: 300px;
-    max-width: 30%;
-*/
+    /* min-height: 300px;
+    max-width: 30%; */
     height: 300px;
     width: 450px;
     margin: 1em;
@@ -216,12 +207,12 @@ ul {
 #program-list,
 #other-opps,
 #directories {
-/*    padding: 0px 50px 30px;*/
+    /* padding: 0px 50px 30px; */
     padding: 0 5em 1em;
 }
 
 #about {
-/*    border: solid;*/
+    /* border: solid; */
     display: inline-block;
     text-align: left;
     float: left;
@@ -234,17 +225,17 @@ ul {
 }
 
 #about p {
-/*    border: solid;*/
+    /* border: solid; */
     text-align: left;
 }
 
 #newsletter {
-/*    border: solid;*/
+    /* border: solid; */
     display: inline-block;
-/*    float: left;*/
+    /* float: left; */
     width: 40%;
     height: 550px;
-/*    padding-bottom: 50px;*/
+    /* padding-bottom: 50px; */
 }
 
 #newsletter h2 {
@@ -252,7 +243,7 @@ ul {
 }
 
 #newsletter a {
-/*    border: solid black;*/
+    /* border: solid black; */
     display: inline-block;
     text-align: left;
     text-decoration: none;
@@ -262,13 +253,11 @@ ul {
 
 #newsletter img {
     border: 0 solid;
-/*
-    height: 50%;
-    width: 60%;
-*/
+    /* height: 50%;
+    width: 60%; */
     height: 400px;
     object-fit: contain;
-/*    min-height: 80%;*/
+    /* min-height: 80%; */
 }
 
 #newsletter a:hover img {
@@ -280,16 +269,16 @@ ul {
 }
 
 #other-opps {
-/*    border: solid;*/
+    /* border: solid; */
     display: inline-block;
-/*    position: relative;*/
+    /* position: relative; */
     float: left;
     width: 60%;
     height: 500px;
 }
 
 #directories {
-/*    border: solid;*/
+    /* border: solid; */
     display: inline-block;
     width: 40%;
     height: 500px;
@@ -297,8 +286,8 @@ ul {
 
 
 #directories ul {
-/*    border: solid;*/
-/*    display: inline-block;*/
+    /* border: solid; */
+    /* display: inline-block; */
     margin: 0;
     padding: 0;
 }
@@ -470,7 +459,7 @@ ul {
 
 .grid h2 {
     background-color: rgba(38, 38, 38, 0.9);
-/*    background-color: slategray;*/
+    /* background-color: slategray; */
     border-radius: 30px;
     font-family: "Open Sans", sans-serif;
     font-size: 3em;
@@ -481,7 +470,7 @@ ul {
 }
 
 .grid #question {
-/*    border: solid;*/
+    /* border: solid; */
     text-align: center;
     font-family: Georgia, serif;
     font-size: 1.5em;
@@ -526,7 +515,7 @@ ul {
 }
 
 #btn0, #btn1, #btn2 {
-/*    display: block;*/
+    /* display: block; */
     border: 0 solid;
     background-color: rgba(38, 38, 38, 0.9);
     border: 0 solid;
@@ -562,7 +551,7 @@ ul {
     border-radius: 10px;
     color: white;
     font-family: "Open Sans", sans-serif;
-/*    font-family: Georgia, serif;*/
+    /* font-family: Georgia, serif; */
     font-size: 1em;
     padding: 20px;
     margin: 60px 0 0;

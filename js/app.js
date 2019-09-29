@@ -1,41 +1,27 @@
 var answers = []; // save all the answers
 var programs = [];
 function display() {
-//    if(quiz.isEnded()) {
-//        showResults();
-//    } else {
-    
-    // BRANCHING
-        if (quiz.questionIndex == 1 && answers[0] == "interests") {
-        quiz.setQuestionIndex(3);
-        }
-    
-        // show question
-    
-        var elementQ = document.getElementById("question");
-        var elementA = document.getElementById("answers");
-        elementQ.innerHTML = quiz.getQuestion().text;
-        elementA.innerHTML = "";
-        
-        // show options
-        var choices = quiz.getQuestion().choices;
-        for (var i = 0; i < choices.length; i ++) {
-            var button = document.createElement("BUTTON");
-            button.id = "btn" + i;
-            button.innerHTML = choices[i];
-            elementA.appendChild(button);
-            saveAnswer(button.id, choices[i]);
-        }
+    if (quiz.questionIndex == 1 && answers[0] == "interests") {
+    quiz.setQuestionIndex(3);
+    }
 
-//        for(var i = 0; i < choices.length; i++) {
-//            var element = document.getElementById("choice" + i);
-//            element.innerHTML = choices[i];
-//            guess("btn" + i, choices[i]);
-//        }
-        
-//        display();
-        showProgress();
-//    }
+    // show question
+    var elementQ = document.getElementById("question");
+    var elementA = document.getElementById("answers");
+    elementQ.innerHTML = quiz.getQuestion().text;
+    elementA.innerHTML = "";
+    
+    // show options
+    var choices = quiz.getQuestion().choices;
+    for (var i = 0; i < choices.length; i ++) {
+        var button = document.createElement("BUTTON");
+        button.id = "btn" + i;
+        button.innerHTML = choices[i];
+        elementA.appendChild(button);
+        saveAnswer(button.id, choices[i]);
+    }
+
+    showProgress();
 };
 
 function saveAnswer(id, answer) {
@@ -53,24 +39,13 @@ function saveAnswer(id, answer) {
     }
 };
 
-//function guess(id, guess) {
-//    var button = document.getElementById(id);
-//    button.onclick = function() {
-//        quiz.guess(guess);
-//        display();
-//    }
-//};
-
-
 function showProgress() {
-//    var currentQuestionNumber = quiz.questionIndex + 1;
     var currentQuestionNumber = answers.length + 1;
     var element = document.getElementById("progress");
     element.innerHTML = "Question " + currentQuestionNumber + " of " + quiz.questions.length; 
 };
 
 function matchPrograms() {
-    //var programs = [];
     if (answers[0] == "interests") {
         if (answers[1] == "Yes") {
             programs.push("<a class='prog-link' href='https://www.brynmawr.edu/lilac/praxis-courses' target='_blank'>Praxis Program</a>");
